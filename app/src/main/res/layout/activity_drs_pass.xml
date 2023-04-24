@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Select relation"
+            android:textSize="20dp"
+
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/non_delivery_reason_spinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/non_delivery_reason" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Select Delivery Proof"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/delivery_proof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/delivery_proof_value" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/drs_pass_proof_details_label"
+                android:text="Proof Details"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/drs_pass_proof_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fiftysix"
+                android:background="@color/white"
+                android:inputType="text"
+                android:maxLength="30"
+                android:visibility="gone"
+                android:hint="Proof Details"
+                android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Receiver Name"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/drs_pass_receiver_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftysix"
+            android:background="@color/white"
+            android:inputType="text"
+            android:hint="Receiver Name"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Receiver Phone"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/drs_pass_receiver_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftysix"
+            android:background="@color/white"
+            android:inputType="phone"
+            android:hint="Receiver Phone"
+            android:singleLine="true"/>
+
+            <TextView
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:text="Receiver Signature"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/drs_pass_receiver_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ripple_material_light"
+                android:src="@drawable/ic_signature" />
+
+            <TextView
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:paddingTop="20dp"
+                android:text="POD Image"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/drs_pass_pod_image"
+                android:layout_width="match_parent"
+                android:paddingBottom="30dp"
+                android:padding="0px"
+                android:layout_height="wrap_content"
+                android:background="@color/ripple_material_light"
+                android:src="@drawable/ic_camera" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Name:-"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:text="Name:-"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/text_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="2dp">
+
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/delivered_pass_update_button"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+            <Button
+                android:layout_width="80dp"
+                android:visibility="gone"
+                android:id="@+id/delivered_pass_update_save_button"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/delivered_pass_update_cancel_button"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

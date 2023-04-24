@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button_capture"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftysix"
+        android:background="@color/app_color"
+        android:layout_alignParentBottom="true"
+        android:text="Capture"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title"/>
+
+    <RelativeLayout
+        android:id="@+id/camera_photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/camera_photo_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/camera_photo_bottom_layout"/>
+
+        <LinearLayout
+            android:id="@+id/camera_photo_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fiftysix"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/camera_photo_retake"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/app_color"
+                android:text="Retake"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title"/>
+
+            <Button
+                android:id="@+id/camera_photo_proceed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/app_color_dark"
+                android:text="Proceed"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

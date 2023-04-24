@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/sixteen"
+    android:paddingRight="@dimen/sixteen"
+    android:paddingTop="@dimen/eight"
+    android:paddingBottom="@dimen/eight">
+
+    <LinearLayout
+        android:id="@+id/sequence_left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/item_docket_attempt"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/bulk_list_checkbox"
+                android:layout_marginRight="3dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_docket_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/item_drs_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subtitle"/>
+
+        <TextView
+            android:id="@+id/item_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subtitle"/>
+
+        <TextView
+            android:id="@+id/item_customer_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_docket_number"
+            android:lines="2"
+            android:textColor="@color/black_a"
+            android:textSize="@dimen/subtitle"/>
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/item_docket_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/jobtype"/>
+
+    <TextView
+        android:id="@+id/item_docket_attempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_docket_status"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/item_docket_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/item_docket_status"
+        android:layout_marginRight="@dimen/sixteen"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:visibility="visible"/>-->
+
+</RelativeLayout>

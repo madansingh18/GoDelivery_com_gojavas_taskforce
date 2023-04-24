@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/bar_code_scan"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="Scan" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/update_reverse_control"
+        android:id="@+id/myRadioGroup"
+        android:orientation='horizontal'
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:checkedButton="@+id/update_reverse_picked" >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:id="@+id/update_reverse_full_picked"
+            android:text="Full Picked" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_reverse_picked"
+            android:text="Part Picked" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_reverse_unpicked"
+            android:text="Unpicked" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_reverse_cancel"
+            android:text="Cancel" />
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:padding="15dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/reverse_fail_awb"
+            android:numeric="integer"
+            android:hint="Enter AWB Number"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:id="@+id/non_delivery_reason_spinner_id_for_unpicked_cancel_level"
+            android:text="@string/non_delivery_reason_reverse_pickup"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/non_delivery_reason_spinner_id_for_unpicked_cancel"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:prompt="@string/non_delivery_reason_reverse_pickup" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/reverse_fail_remarks"
+            android:hint="Remarks"
+            android:ems="10"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:layout_height="match_parent" />
+
+
+
+
+
+        <DatePicker
+            android:id="@+id/non_delivery_another_date"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/non_delivery_reason" />
+
+     <LinearLayout
+         android:id="@+id/reverse_pickup_dynamic_sku"
+         android:layout_width="match_parent"
+         android:visibility="gone"
+         android:orientation="vertical"
+         android:layout_height="wrap_content">
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/update_reverse_control"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="2dp">
+
+            <Button
+                android:layout_width="100dp"
+                android:id="@+id/delivered_fail_update_button"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+            <Button
+                android:layout_width="100dp"
+                android:id="@+id/delivered_fail_update_cancel_button"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

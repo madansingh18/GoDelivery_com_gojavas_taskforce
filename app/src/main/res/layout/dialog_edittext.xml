@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/sixteen"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/dialog_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:inputType="number"
+        android:hint="Enter phone number"
+        android:textColorHint="@color/black_a"
+        android:paddingLeft="@dimen/eight"
+        android:paddingRight="@dimen/eight"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:text="You will receive an SMS shortly"
+        android:textColor="@color/black_a"/>
+
+    <Button
+        android:id="@+id/dialog_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fortyeight"
+        android:layout_marginRight="@dimen/fortyeight"
+        android:text="Done"/>
+
+</LinearLayout>

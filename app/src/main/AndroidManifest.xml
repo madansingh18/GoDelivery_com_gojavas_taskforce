@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gojavas.taskforce">
+
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <!-- General -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Camera -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <!-- Call -->
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
+    <!--<uses-permission android:name="android.permission.READ_CALL_LOG"/>-->
+    <!--<uses-permission android:name="android.permission.WRITE_CALL_LOG"/>-->
+    <!--<uses-permission android:name="android.permission.CALL_PHONE" />-->
+    <!--<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>-->
+    <!--<uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />-->
+
+    <!-- SMS -->
+    <!--<uses-permission android:name="android.permission.READ_SMS" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_SMS" />-->
+    <!--<uses-permission android:name="android.permission.SEND_SMS" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_MMS" />-->
+    <!-- Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- GCM -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.gojavas.taskforce.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.gojavas.taskforce.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:name="com.gojavas.taskforce.ui.activity.TaskForceApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gojavas.taskforce.ui.activity.PrivacyPolicyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.DRSActivityTab"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.PhoneNumberActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.PickupAlertActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.PickupDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.ManualAWS"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.PhoneNumberValidation"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.SequenceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.DRSActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.TabActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.DocketDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.SuccessActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.FailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.DRSFailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.ReversePickupCancelActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.DRSPassActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.DRSDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.SignatureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.StataticsAcitivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.ProfileActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.ItemsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.SummaryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gojavas.taskforce.ui.activity.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <!-- Receivers -->
+        <!-- Phone restart receiver -->
+        <receiver android:exported="false" android:name="com.gojavas.taskforce.receiver.ActionBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- Phone shutdown receiver -->
+        <receiver android:exported="false" android:name="com.gojavas.taskforce.receiver.ShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <!--<receiver android:name=".receiver.OutgoingCall">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>-->
+
+        <!--<receiver android:name="com.gojavas.taskforce.receiver.SMSTrackerActivity" android:enabled="true">-->
+            <!--<intent-filter android:priority="101">-->
+                <!--<action android:name="android.provider.Telephony.SMS_RECEIVED" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter android:priority="101">-->
+                <!--<action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />-->
+                <!--<data android:mimeType="application/vnd.wap.mms-message" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter android:priority="101">-->
+                <!--<action android:name="com.android.mms.transaction.MESSAGE_SENT" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.gojavas.taskforce.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_list"></meta-data>
+        </provider>
+
+        <!--<receiver android:name=".receiver.DownloadReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.DOWNLOAD_COMPLETE" />-->
+                <!--<action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        
+        
+        <!-- GCM -->
+    <!--    <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.gojavas.taskforce" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.gojavas.taskforce.gcm.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.gojavas.taskforce.gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>-->
+        <service
+            android:name="com.gojavas.taskforce.gcm.RegistrationIntentService"
+            android:exported="false">
+    </service>
+
+        <!-- Services -->
+        <service android:name="com.gojavas.taskforce.manager.UploadManager"/>
+        <service android:name="com.gojavas.taskforce.services.SyncSchedulerService"/>
+        <service android:name="com.gojavas.taskforce.services.PullSchedulerService"/>
+        <service android:name="com.gojavas.taskforce.services.PushSchedulerService"/>
+        <service android:name="com.gojavas.taskforce.services.GpsScheduler"/>
+        <service android:name="com.gojavas.taskforce.services.GpsLogService"/>
+        <!--<service android:name="com.gojavas.taskforce.services.CallLogService"/>-->
+        <service android:name="com.gojavas.taskforce.services.SwipeLogService"/>
+        <!--<service android:name="com.gojavas.taskforce.services.InsertCallLog"/>-->
+        <!--<service android:name="com.gojavas.taskforce.services.InsertSms"/>-->
+        <service android:name="com.gojavas.taskforce.services.PodImageScheduler"/>
+        <service android:name="com.gojavas.taskforce.services.ImageUploadScheduler"/>
+        <service android:name="com.gojavas.taskforce.services.FileDeleteService"/>
+        <service android:name="com.gojavas.taskforce.services.LogoutShutdownScheduler"/>
+        <!-- Amazon -->
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <service
+            android:name=".fcm.FirebaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/sixteen"
+    android:paddingRight="@dimen/sixteen"
+    android:paddingTop="@dimen/eight"
+    android:paddingBottom="@dimen/eight">
+
+    <LinearLayout
+        android:id="@+id/sequence_left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/item_ticket_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title"/>
+
+
+
+        <TextView
+            android:id="@+id/item_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subtitle"/>
+
+        <TextView
+            android:id="@+id/item_pickup_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:textColor="@color/black_a"
+            android:textSize="@dimen/subtitle"/>
+
+        <TextView
+            android:id="@+id/item_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subtitle"/>
+
+        <TextView
+            android:id="@+id/item_pickup_time"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:textColor="@color/black_a"
+            android:textSize="@dimen/subtitle"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

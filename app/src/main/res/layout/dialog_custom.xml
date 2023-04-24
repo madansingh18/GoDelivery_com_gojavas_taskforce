@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="@dimen/sixteen">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pointone"
+        android:background="@color/black_a50"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sixteen"
+        android:background="@color/grey"
+        android:orientation="vertical"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pointone"
+        android:background="@color/black_a50"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_ok_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="OK"
+            android:textColor="@color/black_a"/>
+
+        <Button
+            android:id="@+id/dialog_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Cancel"
+            android:textColor="@color/black_a"/>
+
+    </LinearLayout>
+
+</LinearLayout>

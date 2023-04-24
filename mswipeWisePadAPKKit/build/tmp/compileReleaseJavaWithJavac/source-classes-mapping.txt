@@ -1,0 +1,19 @@
+com/mswipe/wisepad/apkkit/WisePadControllerListener.java
+ com.mswipe.wisepad.apkkit.WisePadControllerListener
+com/mswipe/wisepad/apkkit/WisePadController.java
+ com.mswipe.wisepad.apkkit.WisePadController
+ com.mswipe.wisepad.apkkit.WisePadController$1
+ com.mswipe.wisepad.apkkit.WisePadController$2
+ com.mswipe.wisepad.apkkit.WisePadController$3
+ com.mswipe.wisepad.apkkit.WisePadController$4
+ com.mswipe.wisepad.apkkit.WisePadController$4$1
+ com.mswipe.wisepad.apkkit.WisePadController$ORIENTATION
+com/mswipe/wisepad/apkkit/BuildConfig.java
+ com.mswipe.wisepad.apkkit.BuildConfig
+com/mswipe/wisepad/apkkit/CustomProgressDialog.java
+ com.mswipe.wisepad.apkkit.CustomProgressDialog
+com/mswipe/wisepad/apkkit/MSAppInstalledStatusReceiver.java
+ com.mswipe.wisepad.apkkit.MSAppInstalledStatusReceiver
+com/mswipe/wisepad/apkkit/AutoUpdateAPKController.java
+ com.mswipe.wisepad.apkkit.AutoUpdateAPKController
+ com.mswipe.wisepad.apkkit.AutoUpdateAPKController$AsynckCall

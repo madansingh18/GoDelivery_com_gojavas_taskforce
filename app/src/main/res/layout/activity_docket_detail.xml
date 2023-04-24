@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/scroll_view"
+        android:layout_above="@+id/middle_layout"/>
+
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftysix"
+        android:orientation="horizontal"
+        android:layout_above="@+id/docket_detail_bottom_layout"/>
+
+    <LinearLayout
+        android:id="@+id/docket_detail_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftysix"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/docket_detail_sms_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/orange_white_border"
+            android:padding="@dimen/eight"
+            android:src="@drawable/ic_sms"/>
+
+        <ImageView
+            android:id="@+id/docket_detail_call_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/orange_white_border"
+            android:padding="@dimen/eight"
+            android:src="@drawable/ic_call"/>
+
+        <ImageView
+            android:id="@+id/docket_detail_customercare_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/orange_white_border"
+            android:padding="@dimen/eight"
+            android:src="@drawable/ic_customer_care"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

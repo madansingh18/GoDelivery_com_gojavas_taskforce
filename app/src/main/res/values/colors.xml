@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#CCC</color>
+    <color name="black_a">#AA000000</color>
+    <color name="black_a50">#50000000</color>
+    <color name="grey">#F2F2F2</color>
+    <color name="accent">#FF1BA0E1</color>
+    <color name="app_color">#FF1BA0E1</color>
+    <color name="app_color_a">#501BA0E1</color>
+    <color name="app_color_dark">#FF082E7F</color>
+
+    <color name="colorPrimary">#FF1BA0E1</color>
+    <color name="colorPrimaryDark">#FF1BA0E1</color>
+    <color name="textColorPrimary">#D9FFFFFF</color>
+    <color name="windowBackgroundColor">#333333</color>
+    <color name="black_a80">#80000000</color>
+
+    <color name="success">#FF5CB433</color>
+    <color name="failed">#FFE22836</color>
+    <color name="pending">#FFFFC800</color>
+
+</resources>

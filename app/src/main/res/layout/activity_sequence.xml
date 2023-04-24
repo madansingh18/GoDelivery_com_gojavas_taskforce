@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sequence_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/app_color"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/eight"
+                android:text="PENDING"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/sequence_pending_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/eight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/item_count"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/app_color_dark"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/eight"
+                android:text="SEQUENCED"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/sequence_sequenced_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/eight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/item_count"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/sequence_docket_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sequence_done_button"
+        android:layout_below="@+id/sequence_top_layout"
+        android:cacheColorHint="@color/transparent"/>
+
+    <Button
+        android:id="@+id/sequence_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:background="@color/app_color"
+        android:layout_alignParentBottom="true"
+        android:text="DONE"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

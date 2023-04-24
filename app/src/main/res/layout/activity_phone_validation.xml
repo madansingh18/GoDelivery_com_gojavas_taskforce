@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/validation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/twentyfour"
+        android:text="Enter the four digit pin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftysix"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/twentyfour"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginRight="@dimen/eight"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/validation_code_edittex_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/four"
+            android:layout_marginRight="@dimen/four"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@null"/>
+
+        <EditText
+            android:id="@+id/validation_code_edittex_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/four"
+            android:layout_marginRight="@dimen/four"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@null"/>
+
+        <EditText
+            android:id="@+id/validation_code_edittex_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/four"
+            android:layout_marginRight="@dimen/four"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@null"/>
+
+        <EditText
+            android:id="@+id/validation_code_edittex_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/four"
+            android:layout_marginRight="@dimen/four"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@null"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/validation_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirtytwo"
+        android:layout_marginLeft="@dimen/fortyeight"
+        android:layout_marginRight="@dimen/fortyeight"
+        android:text="Done"/>
+
+</LinearLayout>

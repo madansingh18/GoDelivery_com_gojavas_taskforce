@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "14162401076",
+    "firebase_url": "https://gojavas-a511e.firebaseio.com",
+    "project_id": "gojavas-a511e",
+    "storage_bucket": "gojavas-a511e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14162401076:android:2d43328734eb2be35fb761",
+        "android_client_info": {
+          "package_name": "com.gojavas.taskforce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14162401076-eqrb2i3aqb4fjbi5uqkbrr5fpn46kfkq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfMSoKoe69bPxiYCjJJLVD9fbA_JeSSvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14162401076-eqrb2i3aqb4fjbi5uqkbrr5fpn46kfkq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

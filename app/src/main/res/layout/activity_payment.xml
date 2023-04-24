@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/payment_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/eight"
+        app:orientation="horizontal"
+        app:columnCount="2">
+    </androidx.gridlayout.widget.GridLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/eight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundredfifty">
+
+            <RelativeLayout
+                android:id="@+id/payment_cash_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:padding="@dimen/eight"
+                android:layout_margin="@dimen/eight">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty"
+                    android:layout_height="@dimen/eighty"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="Cash"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundredfifty">
+
+            <RelativeLayout
+                android:id="@+id/payment_ezetap_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:padding="@dimen/eight"
+                android:layout_margin="@dimen/eight">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty"
+                    android:layout_height="@dimen/eighty"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="EzeTap"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payment_mswipe_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:padding="@dimen/eight"
+                android:layout_margin="@dimen/eight">
+
+                <ImageView
+                    android:layout_width="@dimen/eighty"
+                    android:layout_height="@dimen/eighty"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="MSwipe"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+</ScrollView>

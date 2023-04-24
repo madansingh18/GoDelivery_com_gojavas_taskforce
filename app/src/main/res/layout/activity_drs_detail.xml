@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!---->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="DOCKET NO"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/DOCKETNO"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="DRS NO"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/DRSNO"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_more_drs_layout"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="150dp"
+                android:id="@+id/add_more_drs"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="Add More DRS" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="CSGENM"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/CSGENM"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="CSGE ADDRESS"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/CSGEADDR"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="ADDRESS TYPE"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/ADDRESS_TYPE"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="CSGE TELEPHONE NO"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/CSGETELENO"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="CSGE ALTERNATE NUMBER"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/ALTERNATE_NUMBER"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="CSGE CITY"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/CSGECITY"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="CSGE PIN CODE"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/CSGEPINCODE"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="PKGS NO"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PKGSNO"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="COD DOD"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/COD_DOD"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="COD AMT"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/COD_AMT"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="DRIVER NAME"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/DRIVER_NAME"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="DRIVER ID"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/DRIVER_ID"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="USER ID"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/USERID"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="CLIENT CODE"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/CLIENT_CODE"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="CLIENT NAME"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/CLIENT_NAME"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="PRODCD"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PRODCD"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="AMOUNT TO CUSTOMER"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/AMOUNT_TO_CUTOMER"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="ENTRY DATE"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/ENTRYDATE"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="ENTRY BY"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/ENTRYBY"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="DATE"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/DATE"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="CONTACT PERSON"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/CONTACT_PERSON"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="2dp">
+
+            <Button
+                android:layout_width="150dp"
+                android:id="@+id/delivered_button"
+                android:layout_height="wrap_content"
+                android:text="Delivered" />
+
+            <Button
+                android:layout_width="150dp"
+                android:id="@+id/non_delivered_button"
+                android:layout_height="wrap_content"
+                android:text="Non Delivered" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

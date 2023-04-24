@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sfsddeckfs"/>
+
+        <TextView
+            android:id="@+id/item_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sfsddfs"/>
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:padding="2dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/linearlayout_item"
+        android:id="@+id/item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sfsddfs"/>
+
+    <View
+        android:layout_below="@+id/item_description"
+        android:background="@android:color/darker_gray"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>

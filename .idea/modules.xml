@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GoDelivery_com_gojavas_taskforce.iml" filepath="$PROJECT_DIR$/.idea/modules/GoDelivery_com_gojavas_taskforce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GoDelivery_com_gojavas_taskforce.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GoDelivery_com_gojavas_taskforce.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GoDelivery_com_gojavas_taskforce.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GoDelivery_com_gojavas_taskforce.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GoDelivery_com_gojavas_taskforce.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GoDelivery_com_gojavas_taskforce.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GoDelivery_com_gojavas_taskforce.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GoDelivery_com_gojavas_taskforce.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcmsender/GoDelivery_com_gojavas_taskforce.gcmsender.iml" filepath="$PROJECT_DIR$/.idea/modules/gcmsender/GoDelivery_com_gojavas_taskforce.gcmsender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcmsender/GoDelivery_com_gojavas_taskforce.gcmsender.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gcmsender/GoDelivery_com_gojavas_taskforce.gcmsender.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gcmsender/GoDelivery_com_gojavas_taskforce.gcmsender.test.iml" filepath="$PROJECT_DIR$/.idea/modules/gcmsender/GoDelivery_com_gojavas_taskforce.gcmsender.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mswipeWisePadAPKKit/GoDelivery_com_gojavas_taskforce.mswipeWisePadAPKKit.iml" filepath="$PROJECT_DIR$/.idea/modules/mswipeWisePadAPKKit/GoDelivery_com_gojavas_taskforce.mswipeWisePadAPKKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mswipeWisePadAPKKit/GoDelivery_com_gojavas_taskforce.mswipeWisePadAPKKit.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mswipeWisePadAPKKit/GoDelivery_com_gojavas_taskforce.mswipeWisePadAPKKit.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mswipeWisePadAPKKit/GoDelivery_com_gojavas_taskforce.mswipeWisePadAPKKit.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mswipeWisePadAPKKit/GoDelivery_com_gojavas_taskforce.mswipeWisePadAPKKit.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mswipeWisePadAPKKit/GoDelivery_com_gojavas_taskforce.mswipeWisePadAPKKit.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mswipeWisePadAPKKit/GoDelivery_com_gojavas_taskforce.mswipeWisePadAPKKit.unitTest.iml" />
+    </modules>
+  </component>
+</project>

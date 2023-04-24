@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gojavas.taskforce.utils.SignatureView
+        android:id="@+id/signature_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:layout_above="@+id/signature_bottom_layout"/>
+
+    <LinearLayout
+        android:id="@+id/signature_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/signature_clear_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/app_color"
+            android:text="Clear"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/signature_done_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/app_color_dark"
+            android:text="Done"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

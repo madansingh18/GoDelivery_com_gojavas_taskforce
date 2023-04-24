@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/sixteen"
+    android:background="@color/white">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/sixteen"-->
+        <!--android:paddingLeft="@dimen/eight"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingRight="@dimen/eight"-->
+        <!--android:textColor="@color/black_a"-->
+        <!--android:textSize="@dimen/sixteen"-->
+        <!--android:text="Please Verify Phone Number with Free Recharge Account"-->
+        <!--android:id="@+id/dialog_message" />-->
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen"
+        android:paddingLeft="@dimen/eight"
+        android:paddingRight="@dimen/eight"
+        android:textSize="@dimen/sixteen"
+        android:text="Please Verify Phone Number with "
+        android:textColor="@color/black_a"/>
+    <TextView
+        android:id="@+id/dialog_text_amount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/eight"
+        android:paddingRight="@dimen/eight"
+        android:textSize="@dimen/sixteen"
+        android:text="Customer FreeCharge Account"
+        android:textColor="@color/black_a"/>
+
+    <EditText
+        android:id="@+id/dialog_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:inputType="number"
+        android:hint="Enter phone number"
+        android:textColorHint="@color/black_a"
+        android:paddingLeft="@dimen/eight"
+        android:paddingRight="@dimen/eight"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/dialog_text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:paddingLeft="@dimen/eight"
+        android:textSize="@dimen/sixteen"
+        android:text="You docket Amount is Rs."
+        android:textColor="@color/black_a"/>
+
+    <Button
+        android:id="@+id/dialog_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fortyeight"
+        android:layout_marginRight="@dimen/fortyeight"
+        android:text="Done"/>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary_header"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/summary_job_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/success_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Success"
+            android:padding="@dimen/eight"/>
+
+        <TextView
+            android:id="@+id/summary_success"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/success_title"
+            android:padding="@dimen/eight"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/pending_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/success_title"
+            android:padding="@dimen/eight"
+            android:textSize="20sp"
+            android:text="Pending"/>
+
+        <TextView
+            android:id="@+id/summary_pending"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/success_title"
+            android:layout_toRightOf="@+id/pending_title"
+            android:padding="@dimen/eight"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/failed_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pending_title"
+            android:padding="@dimen/eight"
+            android:text="Failed"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/summary_failed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pending_title"
+            android:layout_toRightOf="@+id/failed_title"
+            android:padding="@dimen/eight"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/summary_amount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="@dimen/eight"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

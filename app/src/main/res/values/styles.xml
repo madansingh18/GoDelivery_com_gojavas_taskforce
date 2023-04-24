@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="actionBarStyle">@style/CustomActionBar</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Custom Dialog  -->
+    <style name="customDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorControlActivated">@color/accent</item>
+    </style>
+
+    <!-- Custom Full screen Dialog -->
+    <style name="customFullScreenDialogTheme" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+    <!-- Custom Action bar -->
+    <style name="CustomActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/app_color</item>
+    </style>
+
+</resources>

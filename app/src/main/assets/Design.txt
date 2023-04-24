@@ -1,0 +1,166 @@
+{
+"JobType":["Delivery", "Pickup", "MobilePickup", "90Minutes", "TNB"],
+
+"Delivery":{"Basic_Settings":{"Job_Title":"Delivery","Identifier":"D","Identifier_Color":"#3c9ee6"}, 
+			"Action":[{"Type":"Success","Title":"Delivered","Color":"#00FF00"},{"Type":"Fail","Title":"Failed","Color":"#FF0000"}], 
+			"Success":[
+				{"Type":"Payment","Title":"Payment","Compulsory":"true","Icon":"ic_payment","Column":"mode_of_payment"},
+				{"Type":"DropDownSingleChoice","Title":"Relationship","Values":["Father","Mother","Sister","Brother","Other"],"Compulsory":"true","Icon":"ic_relation","Column":"delivered_to"},
+				{"Type":"UserInput","Title":"Delivered To","Compulsory":"true","Icon":"ic_relation","Column":"delivered_to_relation"},
+				{"Type":"Rating","Title":"NPS Score","Compulsory":"true","Icon":"ic_rating","Column":"nps_score"},
+				{"Type":"Signature","Title":"Signature","Compulsory":"true","Icon":"ic_signature","Column":"customer_sign"},
+				{"Type":"Camera","Title":"Photo 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+				{"Type":"Camera","Title":"Photo 2","Icon":"ic_camera","Column":"customer_img2"},
+				{"Type":"Camera","Title":"Photo 3","Icon":"ic_camera","Column":"customer_img3"},
+				{"Type":"DropDownSingleChoice","Title":"Happy Delivery","Values":["Yes","No"],"Compulsory":"true","Icon":"ic_dropdown","Column":"happy_delivery"},
+				{"Type":"Camera","Title":"Happy Delivered Image","Icon":"ic_camera","Column":"happy_delivery_img"},
+				{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}],
+			"Fail":[
+				{"Type":"CustomerInitiatedDelay","Title":"CID - Customer Initiated Delay"},
+				{"Type":"DelayDueToOther","Title":"DDO - Delay due to Other"},
+				{"Type":"InstantReturn","Title":"IR - Instant Return"},
+				{"Type":"OrderCancel","Title":"ORC - Order Cancel"},
+				{"Type":"PartialReturn","Title":"PR - Partial Return"}
+				]},
+				
+"Pickup":{"Basic_Settings":{"Job_Title":"Pickup","Identifier":"P","Identifier_Color":"#d9d230"},
+         "Action":[{"Type":"Success","Title":"Closed","Color":"#00FF00"},{"Type":"Fail","Title":"Failed","Color":"#FF0000"}], 
+         "Success":[
+            {"Type":"ItemsArray","Title":"SKU Items Array","Compulsory":"true","Icon":"ic_items"},
+            {"Type":"DropDownSingleChoice","Title":"Extra Items Picked","Values":["0","1","2","3","4","5"],"Compulsory":"true","Icon":"ic_dropdown","Column":"extra1"},
+            {"Type":"Scanner","Title":"Reverse Docket Number","Compulsory":"true","Icon":"ic_qrcode","Column":"reverse_doket_number"},
+            {"Type":"Camera","Title":"POD 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+            {"Type":"Camera","Title":"POD 2","Icon":"ic_camera","Column":"customer_img2"},
+            {"Type":"Camera","Title":"POD 3","Icon":"ic_camera","Column":"customer_img3"},
+            {"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}],
+         "Fail":[
+            {"Type":"CustomerCancellation","Title":"CC - Customer Cancellation"},
+            {"Type":"CustomerInitiatedDelay","Title":"CID - Customer Initiated Delay"},
+            {"Type":"NotContactable","Title":"NC- Not Contactable"},
+            {"Type":"Unattempt","Title":"UnAttempt"}
+            ]},
+			
+"MobilePickup":{"Basic_Settings":{"Job_Title":"MobilePickup","Identifier":"MP","Identifier_Color":"#3c9ee6"},
+           "Action":[{"Type":"Success","Title":"Closed","Color":"#00FF00"},{"Type":"Fail","Title":"Failed","Color":"#FF0000"}],
+           "Success":[
+				{"Type":"ItemsArray","Title":"SKU Items Array","Compulsory":"true","Icon":"ic_items"},
+				{"Type":"Scanner","Title":"Reverse Docket Number","Compulsory":"true","Icon":"ic_qrcode","Column":"reverse_docket_number"},
+				{"Type":"Camera","Title":"POD 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+				{"Type":"Camera","Title":"POD 2","Icon":"ic_camera","Column":"customer_img2"},
+				{"Type":"Camera","Title":"POD 3","Icon":"ic_camera","Column":"customer_img3"},
+				{"Type":"UserInput","Title":"Amount","Icon":"ic_info","Column":"amount_tobe_paid"},
+				{"Type":"DropDownSingleChoice","Title":"Confirm","Values":["Yes","No"],"Compulsory":"true","Icon":"ic_dropdown"},
+				{"Type":"DropDownSingleChoiceSlab","Title":"Slab Details","Compulsory":"true","Icon":"ic_dropdown"},
+				{"Type":"Payment","Title":"Collect","Compulsory":"true","Icon":"ic_payment","Column":"mode_of_payment"},
+				{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}],
+           "Fail":[
+				{"Type":"CustomerCancellation","Title":"CC - Customer Cancellation"},
+				{"Type":"CustomerInitiatedDelay","Title":"CID - Customer Initiated Delay"},
+				{"Type":"NotContactable","Title":"NC- Not Contactable"},
+				{"Type":"Unattempt","Title":"UnAttempt"}
+            ]},
+				
+"90Minutes":{"Basic_Settings":{"Job_Title":"90Minutes","Identifier":"90","Identifier_Color":"#22b554"},
+         "PrimaryAction":[{"Type":"Accept","Title":"Accept","Color":"#FFFF00"},{"Type":"Reject","Title":"Reject","Color":"#FFFF00"}],
+         "Action":[{"Type":"Success","Title":"Closed","Color":"#00FF00"},{"Type":"Fail","Title":"Failed","Color":"#FF0000"}], 
+         "Success":[
+            {"Type":"ItemsArray","Title":"List of Product","Compulsory":"true","Icon":"ic_items"},
+            {"Type":"DropDownSingleChoice","Title":"Extra Items Picked","Values":["0","1","2","3","4","5"],"Compulsory":"true","Icon":"ic_dropdown","Column":"extra1"},
+            {"Type":"Scanner","Title":"Reverse Docket Number","Compulsory":"true","Icon":"ic_qrcode","Column":"reverse_doket_number"},
+            {"Type":"Camera","Title":"POD 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+            {"Type":"Camera","Title":"POD 2","Icon":"ic_camera","Column":"customer_img2"},
+            {"Type":"Camera","Title":"POD 3","Icon":"ic_camera","Column":"customer_img3"},
+            {"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}],
+         "Fail":[
+            {"Type":"CustomerCancellation","Title":"CC - Customer Cancellation"},
+            {"Type":"CustomerInitiatedDelay","Title":"CID - Customer Initiated Delay"},
+            {"Type":"NotContactable","Title":"NC - Not Contactable"},
+            {"Type":"Unattempt","Title":"UnAttempt"}
+            ]},
+			
+"TNB":{"Basic_Settings":{"Job_Title":"TNB","Identifier":"TNB","Identifier_Color":"#ed5e0e"},
+         "Action":[{"Type":"Fail","Title":"Failed","Color":"#FF0000"}],
+         "Fail":[
+            {"Type":"CustomerInitiatedDelay","Title":"CID - Customer Initiated Delay"},
+            {"Type":"OrderCancel","Title":"ORC - Order Cancel"},
+            {"Type":"InstantReturn","Title":"IR - Instant Return"}
+            ]},
+				
+"Payment":{"Success":[
+				{"Type":"Cash","Title":"Cash","Icon":"ic_payment"},
+				{"Type":"Wallet","Title":"Wallet","Icon":"ic_payment"},
+				{"Type":"Ezetap","Title":"Ezetap","Icon":"ic_ezetap"},
+				{"Type":"Mswipe","Title":"Mswipe","Icon":"ic_mswipe"}
+			]},
+
+"CustomerCancellation":{"Success":[
+						{"Type":"DropDownSingleChoice","Title":"Customer Cancellation","Values":["CC Reason 1","CC Reason 2"],"Compulsory":"true","Icon":"ic_dropdown","Column":"failed_reason"},
+						{"Type":"Camera","Title":"Photo 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+						{"Type":"Camera","Title":"Photo 2","Icon":"ic_camera","Column":"customer_img2"},
+						{"Type":"Camera","Title":"Photo 3","Icon":"ic_camera","Column":"customer_img3"},
+						{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}
+						]},
+						
+"CustomerInitiatedDelay":{"Success":[
+						{"Type":"DropDownSingleChoice","Title":"Customer Initiated Delay","Values":["CID Reason 1","CID Reason 2"],"Compulsory":"true","Icon":"ic_dropdown","Column":"failed_reason"},
+						{"Type":"Date","Title":"Pickup on other date","Icon":"ic_date"},
+						{"Type":"Camera","Title":"Photo 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+						{"Type":"Camera","Title":"Photo 2","Icon":"ic_camera","Column":"customer_img2"},
+						{"Type":"Camera","Title":"Photo 3","Icon":"ic_camera","Column":"customer_img3"},
+						{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}
+						]},
+						
+"NotContactable":{"Success":[
+						{"Type":"DropDownSingleChoice","Title":"Not Contactable","Values":["NC Reason 1","NC Reason 2"],"Compulsory":"true","Icon":"ic_dropdown","Column":"failed_reason"},
+						{"Type":"Camera","Title":"Photo 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+						{"Type":"Camera","Title":"Photo 2","Icon":"ic_camera","Column":"customer_img2"},
+						{"Type":"Camera","Title":"Photo 3","Icon":"ic_camera","Column":"customer_img3"},
+						{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}
+						]},
+						
+"Unattempt":{"Success":[
+						{"Type":"DropDownSingleChoice","Title":"Un-Attempt","Values":["UA Reason 1","UA Reason 2"],"Compulsory":"true","Icon":"ic_dropdown","Column":"failed_reason"},
+						{"Type":"Camera","Title":"Photo 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+						{"Type":"Camera","Title":"Photo 2","Icon":"ic_camera","Column":"customer_img2"},
+						{"Type":"Camera","Title":"Photo 3","Icon":"ic_camera","Column":"customer_img3"},
+						{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}
+						]},
+						
+"DelayDueToOther":{"Success":[
+						{"Type":"DropDownSingleChoice","Title":"DDO Reason","Values":["DDO Reason 1","DDO Reason 2"],"Compulsory":"true","Icon":"ic_dropdown","Column":"failed_reason"},
+						{"Type":"Camera","Title":"Photo 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+						{"Type":"Camera","Title":"Photo 2","Icon":"ic_camera","Column":"customer_img2"},
+						{"Type":"Camera","Title":"Photo 3","Icon":"ic_camera","Column":"customer_img3"},
+						{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}
+						]},
+						
+"InstantReturn":{"Success":[
+						{"Type":"DropDownSingleChoice","Title":"IR Reason","Values":["IR Reason 1","IR Reason 2"],"Compulsory":"true","Icon":"ic_dropdown","Column":"failed_reason"},
+						{"Type":"Camera","Title":"Photo 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+						{"Type":"Camera","Title":"Photo 2","Icon":"ic_camera","Column":"customer_img2"},
+						{"Type":"Camera","Title":"Photo 3","Icon":"ic_camera","Column":"customer_img3"},
+						{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}
+						]},
+						
+"OrderCancel":{"Success":[
+						{"Type":"DropDownSingleChoice","Title":"ORC Reason","Values":["ORC Reason 1","ORC Reason 2"],"Compulsory":"true","Icon":"ic_dropdown","Column":"failed_reason"},
+						{"Type":"Camera","Title":"Photo 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+						{"Type":"Camera","Title":"Photo 2","Icon":"ic_camera","Column":"customer_img2"},
+						{"Type":"Camera","Title":"Photo 3","Icon":"ic_camera","Column":"customer_img3"},
+						{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}
+						]},
+						
+"PartialReturn":{"Success":[
+						{"Type":"ItemsArray","Title":"SKU Items","Compulsory":"true","Icon":"ic_items"},
+						{"Type":"DropDownSingleChoice","Title":"Partial Return","Values":["PR Reason 1","PR Reason 2"],"Compulsory":"true","Icon":"ic_dropdown","Column":"failed_reason"},
+						{"Type":"Payment","Title":"Payment","Compulsory":"true","Icon":"ic_payment","Column":"mode_of_payment"},
+						{"Type":"DropDownSingleChoice","Title":"Relationship","Values":["Father","Mother","Sister","Brother","Other"],"Compulsory":"true","Icon":"ic_relation","Column":"delivered_to"},
+						{"Type":"UserInput","Title":"Delivered To","Compulsory":"true","Icon":"ic_relation","Column":"delivered_to_relation"},
+						{"Type":"Rating","Title":"NPS Score","Compulsory":"true","Icon":"ic_rating","Column":"nps_score"},
+						{"Type":"Signature","Title":"Signature","Compulsory":"true","Icon":"ic_signature","Column":"customer_sign"},
+						{"Type":"Camera","Title":"Photo 1","Compulsory":"true","Icon":"ic_camera","Column":"customer_img"},
+						{"Type":"Camera","Title":"Photo 2","Icon":"ic_camera","Column":"customer_img2"},
+						{"Type":"Camera","Title":"Photo 3","Icon":"ic_camera","Column":"customer_img3"},
+						{"Type":"Complete","Title":"Complete","Icon":"ic_info","Column":"status"}
+						]}
+}

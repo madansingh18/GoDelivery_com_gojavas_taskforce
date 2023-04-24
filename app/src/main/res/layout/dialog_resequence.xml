@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_margin="@dimen/sixteen">
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sixteen"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:text="Do you want to resequence?"
+        android:textColor="@color/black_a"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pointone"
+        android:background="@color/black_a50"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyeight"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_ok_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="OK"
+            android:textColor="@color/black_a"/>
+
+        <Button
+            android:id="@+id/dialog_cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="Cancel"
+            android:textColor="@color/black_a"/>
+
+    </LinearLayout>
+
+</LinearLayout>

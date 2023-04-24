@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="5dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Ticket No"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/TicketNo"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="PickupTime"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PickupTime"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="RVP Manifest"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/ProcessID"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Product"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/Product"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Pcs"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/Pcs"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Weight"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/Weight"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Length"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/Length"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Width"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/Width"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Height"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/Height"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Contents"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/Contents"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="GoodsValue"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/GoodsValue"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="150dp"
+                android:text="Pickup Details"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/customborder"
+            android:padding="5dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Person Name"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PickupPersonName"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Address"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PickupAddress"
+                    android:singleLine="false"
+                    android:drawableLeft="@drawable/maps_driving_icon"
+                    android:drawablePadding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/maps_driving"
+                    android:visibility="gone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/maps_driving_icon"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Pincode"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PickupPincode"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="City"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PickupCity"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Mobile"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PickupMobile"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Phone"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PickupPhone"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:text="Email"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/PickupEmail"
+                    android:singleLine="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="2dp">
+
+            <Button
+                android:layout_width="150dp"
+                android:id="@+id/reverse_detail_update_status"
+                android:layout_height="wrap_content"
+                android:text="Update Status" />
+
+            <Button
+                android:layout_width="150dp"
+                android:id="@+id/reverse_detail_close"
+                android:layout_height="wrap_content"
+                android:text="Close" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

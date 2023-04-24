@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Go Delivery</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+
+    <string name="tab_pending">Pending</string>
+    <string name="tab_default">Default</string>
+    <string name="tab_success">Success</string>
+    <string name="tab_failed">Failed</string>
+
+    <string-array name="SOD_client_codes">
+        <item>CC000300034</item>
+        <item>8888</item>
+        <item>10001</item>
+        <item>CC000200345</item>
+        <item>CC000200583</item>
+        <item>CC000200558</item>
+        <item>CC000200522</item>
+    </string-array>
+
+
+    <string name="non_delivery_reason">Select Non Delivery Reason</string>
+    <string name="non_delivery_reason_reverse_pickup">Select Reason</string>
+    <string name="reverse_status">Status</string>
+    <string name="delivery_proof_value">Select Delivery Proof</string>
+    <string name="msg_subscribe_failed">Subscription Failed</string>
+    <string name="msg_subscribed">Subscription Done</string>
+
+    <string-array name="reverse_pickup_status">
+        <item>PICK</item>
+        <item>UNPICK</item>
+        <item>CANCEL</item>
+    </string-array>
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+</resources>
